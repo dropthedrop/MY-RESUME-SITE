@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+</head>
+<body>
+    <h2>Projects Overview</h2>
+    <p>Various projects showcasing my skills in full-stack development and cloud solutions.</p>
+    <h3>Dynamic Resume Website</h3>
+    <p>This project involves creating a dynamic website using Flask, hosted on AWS, integrating with PostgreSQL.</p>
+</body>
+<section id="dynamic-resume-website">
+    <h2>Dynamic Resume Website</h2>
+    <p>This project is a personal resume website designed to showcase my professional and technical skills, as well as my project portfolio. Below are the details of the technologies used and the architectural choices made for this project:</p>
+
+    <h3>Technologies Used</h3>
+    <ul>
+        <li><strong>Flask:</strong> A lightweight WSGI web application framework. It's chosen for its simplicity and flexibility in building web applications quickly. Flask provides the tools needed to create routes and views, which are essential for a dynamic website.</li>
+        <li><strong>Python:</strong> The back-end of this site is powered by Python, leveraging its robust libraries and simplicity in handling back-end logic, including interactions with databases and rendering pages.</li>
+        <li><strong>HTML/CSS/JavaScript:</strong> Used for structuring and designing the front end. HTML lays out the foundation of the pages, CSS is used for styling, and JavaScript adds interactivity to the web pages.</li>
+        <li><strong>PostgreSQL:</strong> This robust, open-source relational database system is used to store and manage the site's data efficiently. It was selected for its scalability and strong community support.</li>
+        <li><strong>AWS:</strong> Amazon Web Services hosts the application, providing a reliable and scalable cloud computing environment. Services used include EC2 for running the application and RDS for database hosting, ensuring high availability and performance.</li>
+        <li><strong>Git/GitHub:</strong> Source code management is handled using Git, with GitHub as the remote repository. This setup facilitates version control and collaboration, allowing updates and changes to be managed systematically.</li>
+    </ul>
+
+    <h3>Architecture Overview</h3>
+    <p>The architecture of this site is designed to be simple yet functional, suitable for a personal project but scalable to more complex deployments. The Flask application acts as the server-side engine, handling requests and responses. HTML templates are rendered through Flask’s Jinja2 template engine, allowing dynamic content generation based on the server-side logic defined in Python. Data persistence is managed through PostgreSQL, ensuring that all data remains secure and consistent. The entire application is deployed on AWS, taking advantage of its robust ecosystem and scalability features.</p>
+
+    <p>This project not only demonstrates my ability to integrate various technologies but also showcases my understanding of web application architecture and cloud-based deployment. It reflects my commitment to professional growth and my capability to utilize industry-standard tools to build comprehensive solutions.</p>
+</section>
+
+<nav>
+    <ul>
+        <li><a href="{{ url_for('home') }}">Home</a></li>
+    </ul>
+</nav>
+</html>

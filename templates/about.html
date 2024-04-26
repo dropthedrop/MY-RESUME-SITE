@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <title>About</title>
+</head>
+<body>
+    <h1>About This Project</h1>
+    <p>This project is built using a variety of modern web development tools and technologies:</p>
+    
+    <ul>
+        <li><strong>Flask:</strong> A micro web framework written in Python.</li>
+        <li><strong>Python:</strong> A high-level, interpreted programming language known for its ease of use.</li>
+        <li><strong>HTML/CSS/JavaScript:</strong> Used for creating and styling the frontend of the website.</li>
+        <li><strong>PostgreSQL:</strong> An open-source relational database management system.</li>
+        <li><strong>AWS:</strong> Amazon Web Services for hosting and deploying the application.</li>
+        <li><strong>Git/GitHub:</strong> Used for version control and managing updates to the project.</li>
+        <li><strong>SQLAlchemy:</strong> ORM library for handling database operations.</li>
+    </ul>
+
+    <p>This page is designed to showcase the technologies involved and how they integrate to create a fully functional dynamic website.</p>
+</body>
+<nav>
+    <ul>
+        <li><a href="{{ url_for('home') }}">Home</a></li>
+    </ul>
+</nav>
+
+</html>
