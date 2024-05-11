@@ -1,0 +1,23 @@
+{
+    "family": "my-resume-site-task",
+    "containerDefinitions": [
+        {
+            "name": "my-resume-site",
+            "image": "285479333816.dkr.ecr.ap-southeast-2.amazonaws.com/my-resume-site:latest",
+            "essential": true,
+            "memory": 512,
+            "cpu": 256,
+            "portMappings": [
+                {
+                    "containerPort": 5000,
+                    "hostPort": 5000
+                }
+            ]
+        }
+    ],
+    "requiresCompatibilities": ["FARGATE"],
+    "networkMode": "awsvpc",
+    "memory": "1024",
+    "cpu": "512",
+    "executionRoleArn": "arn:aws:iam::285479333816:role/ecsTaskExecutionRole"
+}
